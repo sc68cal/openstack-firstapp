@@ -56,8 +56,8 @@ Now, let's make a connection to your cloud, so we can check what release you're 
     .. code-block:: python
 
       from openstack import connection
-      conn = connection.Connection(auth_url="https://myopenstack:5000/v3",
-                                   user_name="me", password="secret", ...)
+      conn = connection.Connection(auth_url=\"https://myopenstack:5000/v3\",
+                                   user_name=\"me\", password=\"secret\", ...)
 
 
 we'll use this 'conn' object throughout the tutorial, so ensure you always have one handy.
@@ -97,10 +97,10 @@ Next, let's create a server, using an image from before:
     .. code-block:: python
 
        args = {
-           "name": "my_server",
-           "flavorRef": "big",
-           "imageRef": "asdf-1234-qwer-5678",
-           "key_name": "my_ssh_key",
+           \"name\": \"my_server\",
+           \"flavorRef\": \"big\",
+           \"imageRef\": \"asdf-1234-qwer-5678\",
+           \"key_name\": \"my_ssh_key\",
        }
        server = conn.compute.create_server(**args)
        servers = conn.compute.list_servers()
@@ -134,3 +134,4 @@ Our app is awesome! something something something.
 
 
 Now visit the awesome graphic interface!!!
+
