@@ -1,0 +1,6 @@
+---
+index: pads
+secret: secretsecret
+server: 127.0.0.1
+suffix: .rst
+target: doc/source
