@@ -16,11 +16,11 @@ https://github.com/stackforge/faafo
 
 /doc contains a playground for the actual tutorial documentation
 
-It's RST, built with sphinx. There's a handy makefile.
+It's RST, built with sphinx.
 
 The RST source includes conditional output logic, so specifying
 
-make libcloud
+tox -e libcloud
 
 will invoke sphinx-build with -t libcloud, meaning sections
 marked .. only:: libcloud in the RST will be built, while others
